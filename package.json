@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "sass": "src/scss/frontend-boilerplate.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/mziyut/frontend-boilerplate/issues"
   },
-  "homepage": "https://github.com/mziyut/frontend-boilerplate#readme"
+  "homepage": "https://github.com/mziyut/frontend-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "sc5-styleguide": "^2.2.0"
+  }
 }
