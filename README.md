@@ -1,3 +1,9 @@
+# mziyut-advent-calendar-2020
+
+このレポジトリはQiita Advent Calendar 2020の記事「[Github Actionsを使ってNext.jsで作られているアプリケーションをfirebase deployをするまで](#)」の記事作成のために作成したレポジトリです
+
+---
+
 # with Firebase Hosting example
 
 The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
