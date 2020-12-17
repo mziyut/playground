@@ -1,6 +1,6 @@
-# mziyut-advent-calendar-2020
+# nextjs github action deploy sample
 
-このレポジトリはQiita Advent Calendar 2020の記事「[Github Actionsを使ってNext.jsで作られているアプリケーションをfirebase deployをするまで](#)」の記事作成のために作成したレポジトリです
+このレポジトリはQiita Advent Calendar 2020の記事「[Github Actionsを使ってNext.jsで作られているアプリケーションをfirebase deployをするまで](https://qiita.com/mziyut/items/2e125a55945f991b0af4)」の記事作成のために作成したレポジトリです
 
 ---
 
