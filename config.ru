@@ -18,7 +18,7 @@ users = YAML.load %q{
 options = {}
 use Gollum::Auth, users, options
 
-gollum_path = File.expand_path(File.dirname(__FILE__))
+gollum_path = File.expand_path(File.dirname(__FILE__)) + '/wiki'
 wiki_options = {}
 
 Precious::App.set(:gollum_path, gollum_path)
