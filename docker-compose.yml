@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  gollum:
+    build: .
+    ports:
+      - 9292:9292
+      - 4567:4567
+    volumes:
+      - ./wiki:/app/wiki
+      - ./Gemfile:/app/Gemfile
+      - ./Gemfile.lock:/app/Gemfile.lock
+    env_file:
+      - .env
