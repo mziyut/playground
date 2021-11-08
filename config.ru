@@ -6,6 +6,7 @@ require 'gollum/app'
 
 set :run, false
 set :environment, :production
+set :port, ENV['PORT'] || 9494
 
 users = YAML.load %q{
 ---
