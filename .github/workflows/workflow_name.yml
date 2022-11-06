@@ -2,7 +2,7 @@ name: workflow_name
 run-name: workflow_name ${{ inputs.target }}
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       target:
         required: true
