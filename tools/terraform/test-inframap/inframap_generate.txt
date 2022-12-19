@@ -1,0 +1,8 @@
+
+ aws_cloudfront_distribution.test
+
+  |
+  |
+  v
+
+        aws_s3_bucket.test
