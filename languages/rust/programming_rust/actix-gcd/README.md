@@ -22,3 +22,5 @@
 - [rust-cli/env_logger: A logging implementation for `log` which is configured via an environment variable.](https://github.com/rust-cli/env_logger/)
 - [examples/main.rs at master · actix/examples · GitHub](https://github.com/actix/examples/blob/master/basics/hello-world/src/main.rs)
 - [examples/main.rs at master · actix/examples · GitHub](https://github.com/actix/examples/blob/master/forms/form/src/main.rs#L213)
+- [Getting Started | Actix](https://actix.rs/docs/getting-started)
+- [Testing | Actix](https://actix.rs/docs/testing)
