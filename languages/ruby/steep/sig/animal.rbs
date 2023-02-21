@@ -1,0 +1,27 @@
+class Animal
+  attr_reader name: String
+  attr_reader age: Integer
+  attr_reader breed: String?
+
+  def initialize: (String name, Integer age, ?String? breed) -> void
+  def greet: -> untyped
+  def walking?: -> untyped
+end
+
+class Dog < Animal
+  def greet: -> (Integer | String)
+  def walking?: -> true
+end
+
+class Fish < Animal
+  def greet: -> nil
+  def walking?: -> false
+end
+
+class Human < Animal
+  ADULT_AGE: Integer
+
+  def greet: -> String
+  def walking?: -> true
+  def adult?: -> bool
+end
