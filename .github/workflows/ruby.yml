@@ -2,13 +2,15 @@ name: Ruby
 
 on:
   pull_request:
+    paths:
+      - '.github/workflows/ruby.yml'
 
 jobs:
   test_ruby:
     strategy:
       fail-fast: false
       matrix:
-        os: ['ubuntu-18.04', 'ubuntu-latest']
+        os: ['ubuntu-latest']
         ruby-version: ['2.7.2']
     runs-on: ${{ matrix.os }}
     timeout-minutes: 10
