@@ -1,0 +1,8 @@
+{
+  "name": "jsx2png",
+  "version": "0.1.0",
+  "description": "JSX to PNG",
+  "main": "index.js",
+  "author": "Yuta Mizui <me@mziyut.com>",
+  "license": "MIT"
+}
