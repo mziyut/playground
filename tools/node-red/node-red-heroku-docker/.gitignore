@@ -1,0 +1,5 @@
+data/.npm
+data/node_modules
+data/package-lock.json
+data/.config.json
+data/.config.json.backup
