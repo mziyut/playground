@@ -1,0 +1,6 @@
+# node
+node_modules
+
+# styleguide
+styleguide
+!styleguide/.gitkeep

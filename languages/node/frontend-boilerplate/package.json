@@ -1,0 +1,26 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "sass": "src/scss/frontend-boilerplate.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mziyut/frontend-boilerplate.git"
+  },
+  "author": "Yuta Mizui <me@mziyut.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mziyut/frontend-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mziyut/frontend-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.1",
+    "sc5-styleguide": "^2.2.0"
+  }
+}
