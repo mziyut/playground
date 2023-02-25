@@ -1,0 +1,32 @@
+#!/bin/bash
+
+###
+# Docker Run File
+
+DOCKER_PATH="/usr/local/bin/docker"
+CONTAINER_NAME="mziyut/mysql"
+LOCAL_MYSQL_PORT="3306"
+
+CONTAINER_ID=$(docker ps | grep $CONTAINER_NAME | awk '{print $1}')
+IP=$(docker inspect $CONTAINER_ID | python -c 'import json,sys;obj=json.load(sys.stdin);print obj[0]["NetworkSettings"]["IPAddress"]')
+
+error() {
+	echo "Usage: `basename $0` [ run | stop | ssh | build ]"
+}
+
+find_container() {
+	docker ps | grep $CONTAINER_NAME | awk '{print $1}'
+}
+
+if [ $# -eq 1 ]; then
+	case "$1" in
+		"run"    ) $DOCKER_PATH run -i -p $LOCAL_MYSQL_PORT:3306 -t $CONTAINER_NAME ;;
+		"stop"   ) $DOCKER_PATH stop $CONTAINER_ID ;;
+		"build"  ) $DOCKER_PATH build -t "$CONTAINER_NAME" . ;;
+		"commit" ) $DOCKER_PATH commit $CONTAINER_NAME $CONTAINER_NAME ;;
+		"mysql"  ) mysql -u root -h $IP ;;
+		*        ) error ;;
+	esac
+else
+	error;
+fi
