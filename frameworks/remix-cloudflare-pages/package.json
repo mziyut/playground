@@ -13,10 +13,16 @@
     "typegen": "wrangler types"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^5.20.0",
+    "@prisma/adapter-pg-worker": "^5.20.0",
+    "@prisma/client": "^5.20.0",
+    "@prisma/pg-worker": "^5.20.0",
     "@remix-run/cloudflare": "^2.13.1",
     "@remix-run/cloudflare-pages": "^2.13.1",
     "@remix-run/react": "^2.13.1",
     "isbot": "^4.1.0",
+    "pg": "^8.13.0",
+    "pg-compat": "^0.0.7",
     "prisma": "^5.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,6 +30,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240512.0",
     "@remix-run/dev": "^2.13.1",
+    "@types/pg": "^8.11.10",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",

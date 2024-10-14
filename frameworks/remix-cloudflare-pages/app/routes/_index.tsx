@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/cloudflare";
 
 export const meta: MetaFunction = () => {
   return [
@@ -6,6 +6,16 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+
+export async function loader({
+  context,
+}: LoaderFunctionArgs): Promise<string[]> {
+  const data = await context.db.example.findMany();
+  console.log(data);
+
+  return json(data);
+}
 
 export default function Index() {
   return (
