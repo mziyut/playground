@@ -1,0 +1,16 @@
+{
+  "name": "vitest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Yuta Mizui <mziyut.dev@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@raegen/vite-plugin-vitest-cache": "^0.3.2",
+    "vitest": "^2.1.6"
+  }
+}
