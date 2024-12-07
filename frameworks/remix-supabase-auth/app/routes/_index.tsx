@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import { createClient } from '@supabase/supabase-js'
 
 export const meta: MetaFunction = () => {
   return [
@@ -6,6 +7,15 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+export async function loader() {
+  const supabase = createClient(process.env.SUPABASE_URL || '', process.env.SUPABASE_ANON_KEY || '')
+  const { data } = await supabase.from('test').select()
+
+  console.table(data)
+
+  return {};
+}
 
 export default function Index() {
   return (
